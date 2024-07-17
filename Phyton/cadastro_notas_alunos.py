@@ -11,7 +11,7 @@ PASSO 3: PROGRAMA DEVOLVE, NOME, NOTAS, MÉDIA E SITUAÇÃO
 
 import time
 
-def aluno_notas():
+#def aluno_notas():
     t0 = time.time()
     alunos = []
     medias = []
