@@ -6,7 +6,7 @@ PASSO 3: PROGRAMA DEVOLVE, NOME, NOTAS, MÉDIA E SITUAÇÃO
 
 
 """
-
+s
 
 import time
 
