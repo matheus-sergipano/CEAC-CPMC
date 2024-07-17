@@ -8,13 +8,13 @@ PASSO 3: PROGRAMA DEVOLVE, NOME, NOTAS, MÉDIA E SITUAÇÃO
 """
 
 
-
 import time
 
 def aluno_notas():
     t0 = time.time()
     alunos = []
-    medias =[]
+    medias = []
+    situacoes = []
     notas = 0
     contador = 0
     while True:
@@ -36,6 +36,12 @@ def aluno_notas():
                     contador = contador + 1
         media = notas/contador
         medias.append(media)
-        print(f'Nome: {nome} Média: {media}')
+        if media<5:
+            situacao = "Reprovado"
+        else:
+            situacao = "Aprovado"
+        situacoes.append()
+        print(f'Nome: {nome} Média: {media} Situação: {situacao}')
+    
     t1 = time.time()
     print(f'Total de {len(alunos)} alunos e total de {t1-t0:.2f} segundos')
